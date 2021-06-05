@@ -8,6 +8,7 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+//题目：https://leetcode-cn.com/problems/remove-linked-list-elements/
 class Solution {
     //递归也是个不错的方法，时间复杂度不变，不过写起来省事儿
 public:
