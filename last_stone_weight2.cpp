@@ -3,6 +3,7 @@ public:
   //题目：https://leetcode-cn.com/problems/last-stone-weight-ii/
   //方法：动态规划，判断这个最大重量下能不能得到 经典的min=sum-2*max_eng-> max_neg=sum/2的向下取整
   //如果dp里面的表示这种情况下的重量，所有dp
+  //DFS在这里会超时，但是思路是dfs后比较全局的ans和当前路径的sum，取小的那个
     int lastStoneWeightII(vector<int>& stones) {
         int sum=0;
         for(int i=0;i<stones.size();i++)
