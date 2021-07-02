@@ -50,4 +50,4 @@ class Solution2{
 		}
 		return number;
 	}
-}
+};
