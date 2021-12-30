@@ -57,4 +57,25 @@ public:
         return maxlen;       
     }
 };
+
+class Solution {
+public:
+    int longestValidParentheses(string s) {
+        stack<int> test;
+        int maxlen=0;
+        test.push(-1);
+        for(int i=0;i<s.length();i++){
+            if(s[i]=='(')test.push(i);
+            else{
+                test.pop();
+                if(test.empty()){
+                    test.push(i);
+                }else{
+                    maxlen=max(maxlen,i-test.top());
+                }
+            }
+        }
+        return maxlen;       
+    }
+};
 ```
