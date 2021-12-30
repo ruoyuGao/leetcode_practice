@@ -3,7 +3,7 @@
 ## Longest Valid Parentheses
 ### count left and right
 维护左右计数器，相等的时候计数，但是右边大于左边的时候清零，但是速度其实超级慢虽然看起来复杂度不高
-'''C
+```C
 class Solution {
 public:
     int longestValidParentheses(string s) {
@@ -33,10 +33,10 @@ public:
         return maxlength;
     }
 };
-'''
+```
 ### stack
 push -1 in stack, meet left parentheses,push it index, meet right parenthese pop. maxlen is the difference between i and top of stack
-'''C
+```C
 class Solution {
 public:
     int longestValidParentheses(string s) {
@@ -57,4 +57,4 @@ public:
         return maxlen;       
     }
 };
-'''
+```
